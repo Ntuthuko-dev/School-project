@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/fontawesome-free-6.7.2-web/css/all.min.css">
+    <link rel="stylesheet" href="loginStyle.css">
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    <!--boxicon link-->
+    <title>Account Registration</title>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="/index.html">
+            <img src="/images/0.jpg">
+            <h3>Amatshezulu High school</h3></a>
+        </div>
+
+      
+        <div class="hammBars"><label  for="nav-toggle"><i class="fa fa-bars"></i></label></div> 
+        <input type="checkbox" id="nav-toggle" class="toggle">
+        <nav>
+            <ul>
+                <li><a href="/index.html">Home</a></li>
+            </ul>
+        </nav>
+        
+       </header>
+    <div class="container">
+        <div class="form-box-signUp">
+            <form action="">
+                <h1>Sign In</h1>
+                <div class="input-box">
+                    <input type="number" placeholder="ID/Certificate" required>
+                    <!--user icon--><box-icon name='user' class="userIcon"></box-icon>
+                </div>
+                <div class="input-box">
+                    <input type="email" placeholder="Email" required="example@gmail.com">
+                    <!--email icon--><box-icon type='solid' name='envelope' class="userIcon"></box-icon>
+                </div>
+                <div class="input-box">
+                    <input type="password" placeholder="Enter Password" required>
+                    <!--user icon--><box-icon name='lock-alt' class="userIcon"></box-icon>
+                </div>
+                <div class="input-box">
+                    <input type="password" placeholder="Confirm Password" required >
+                    <!--lock icon--><box-icon name='lock-alt' class="userIcon"></box-icon>
+                </div>
+                <br>
+                <button type="submit" class="btn">Sign In</button>
+                <p>already have an account Login</p>
+                <button type="submit" class="btn login-btn"><a href="login.html">Login</a></button>
+                <p>or Sign Up with a different platform</p>
+                
+                <div class="social-platforms">
+                    <!--social platforms-->
+                    <a href=""><box-icon type='logo' name='chrome'></box-icon></a>
+                    <a href=""><box-icon type='logo' name='facebook-circle'></box-icon></a>
+                    <a href=""><box-icon name='instagram-alt' type='logo' ></box-icon></a>
+                    <a href=""><box-icon type='logo' name='linkedin-square'></box-icon></a>
+                     <!--social platforms-->
+                </div>
+                </div>
+            </form>
+        </div>
+
+    </div>
+
+</body>
+</html>

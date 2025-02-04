@@ -1,0 +1,391 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+    @import url('https://fonts.googleapis.com/css2?family=Liter&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Quicksand:wght@300..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+}
+
+main{
+    background-color: #FBFBFB;
+    min-height: 100vh;
+    padding-inline:3%;
+    position:relative
+}
+
+/* HEADER STARTS HERE*/
+header{
+    background-color: white;
+    position: sticky;
+    top:0;
+    z-index: 1;
+    padding-block: 1rem;
+
+}
+.logo {
+    display: flex;
+    text-align: center;
+    color: #000;
+   
+}
+
+.logo a {
+    text-decoration: none;
+    color: #000
+}
+
+
+.logo img {
+    width: 70px;
+    height: 90px;
+    padding-block: .8rem;
+}
+.logo h3{
+    font-size: 14px;
+}
+
+nav{
+    position: absolute;
+    background-color: white;
+    padding:10px;
+    display: none;
+    width:60%;
+    top:100%;
+    height: 100vh;
+    z-index: 1;
+}
+
+nav a{
+    text-decoration: none;
+    color:#000;
+}
+
+nav ul li{
+    list-style: none;
+    text-transform: uppercase;
+}
+.toggle:checked ~ nav{
+display: block;
+}
+.toggle{
+    display: none;
+}
+
+.hammBars{
+    position: absolute;
+    top:40%;
+    padding-right: 2rem;
+    right:0;
+}
+/* HEADER ENDS HERE */
+.govpicture{
+    padding-block: 1rem;
+}
+.govpicture img{
+    width: 100%;
+}
+
+.schoolinfo p, li, td{
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 1px;
+    margin-block: 10px;
+}
+
+.parentSreamContainer{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 5px;
+}
+.sream{
+    font-weight: bolder;
+
+}
+
+.sreamRow{
+    flex: 1;
+    padding: 5px;
+    border-radius: none;
+    text-align: center;
+}
+
+.sreamIcon{
+    padding-bottom: 10px;
+    align-items: center;
+}
+
+.sreamName{
+    text-align: center;
+    text-transform: uppercase;
+    font-weight:bolder;
+
+}
+
+.subject{
+    list-style: none;
+    text-align: start;
+}
+
+.subjectContainer{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 5px;
+}
+
+.streams {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.title {
+    text-align: center;
+    margin: 1rem;
+    padding-block: 1.5rem
+}
+
+.parent_class {
+    padding: 1rem;
+}
+
+.directors {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 16px;
+}
+
+.hod_details {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr ;
+    column-gap: 16px;
+    row-gap: 40px;
+}
+
+.directors_profile img {
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+
+}
+
+.directors_profile {
+    text-align: center;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px 2px #000;
+    margin-inline: .8rem;
+    padding-block: 1.1rem;
+}
+
+.directors_details {
+    padding-block: 1rem;
+    margin-block: 1rem;
+}
+
+
+/*Dropdown list*/
+.accordin .content_Container .title {
+    position: relative;
+    cursor: pointer;
+}
+
+.accordin .content_Container .title::after {
+    content: '+';
+    position: absolute;
+    right: -5px;
+}
+
+
+
+.accordin .content_Container .hod_details {
+    line-height: 1.5;
+    width: 100%;
+    height: 0px;
+    overflow: hidden;
+    transition: .5s ease-in-out;
+
+}
+
+.accordin .content_Container.active .hod_details {
+    height: 100%;
+    padding-block: 10px;
+    background-color: #d4d4d4bb;
+}
+
+.accordin .content_Container.active .title {
+    font-size: 18px;
+    transition: .5s;
+
+}
+
+.accordin .content_Container.active .title::after {
+    content: '-';
+    font-size: 30px;
+    transition: .5s;
+}
+
+/*CONTACT DETAILS START*/
+
+.list_details_flex ul,
+.list_details ul {
+    list-style: none;
+    margin-block: 10px;
+    font-size: 20px;
+    font-weight: 350;
+}
+
+.list_details_flex ul {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.list_details_flex img {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+}
+
+.contact_section {
+    display: flex;
+    justify-content: space-evenly;
+    margin-block: 2rem;
+    padding-block: 2rem;
+    flex-direction: column;
+}
+
+.contact_form {
+    background: linear-gradient(45deg, rgb(80, 190, 241), white);
+    padding-block: 2rem;
+    padding-inline: 2.5rem;
+    border-radius: 20px;
+   
+}
+
+.contact_form form>* {
+    margin-bottom: .5rem;
+}
+
+.contact_form form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact_form form input {
+    padding-block: 0.6rem;
+    padding-inline: 1.5rem;
+    border-radius: 10px;
+    border: none;
+}
+
+.submit button {
+    padding-block: 10px;
+    padding-inline: 15px;
+    text-decoration: none;
+    color: #000000;
+    background-color: white;
+    transition: 450ms ease-in-out;
+    border: none;
+    border-radius: 10px;
+    position: absolute;
+    left:0;
+   right:50%;
+   transform: translate(50%,-50%);
+}
+
+.submit button:hover {
+    color: rgb(0, 0, 0);
+}
+
+.submit {
+    margin-block: 1rem;
+}
+
+.container_div{
+    display: flex;
+    gap: 10rem;
+    bottom: 10rem;
+    padding-bottom: 2rem;
+}
+
+.card{
+    padding: 2re;
+    display: flex;
+    gap: 2rem;
+    background-color: rgba(240, 248, 255, 0.5);
+    border-radius: 1rem;
+    border-radius: 1rem;
+    box-shadow: 5px 3px 10px rgba(0, 0, 0, 0.171);
+    cursor: pointer;
+}
+
+.card_img{
+    max-width: 100px;
+    border-radius: 100%;
+}
+
+.card_content{
+    display: flex;
+    gap: 1rem;
+
+}
+
+.card_content p{
+    font-style: italic;
+    color: black;
+    margin-bottom: 1rem;
+
+}
+
+.card_details{
+    align-items: right;
+    color: black;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.footer {
+    background-image: url("amatshezulu.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 40px 0;
+    background-color: rgb(102, 172, 234);
+}
+
+
+.footer ul {
+    margin-top: 0;
+    padding: 0;
+    font-size: 18px;
+    line-height: 1.5;
+    margin-bottom: 0;
+    text-align: center;
+}
+
+.footer ul li a {
+    color: aliceblue;
+    border-bottom: 3px solid transparent;
+    transition: 0.3s ease;
+    text-decoration: none;
+}
+
+.footer ul li a:hover {
+    border-bottom: 3px solid aliceblue;
+}
+
+.footer ul li {
+    display: inline-block;
+    padding: 0 15px;
+}
+
+.footer .coppyright {
+    margin-top: 15px;
+    text-align: center;
+    font-size: 20px;
+    color: aliceblue;
+}
+

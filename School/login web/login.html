@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--boxicon link--><i></i>
+   
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/fontawesome-free-6.7.2-web/css/all.min.css">
+    <link rel="stylesheet" href="loginStyle.css">
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    <title>login</title>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="/index.html">
+            <img src="/images/0.jpg">
+            <h3>Amatshezulu High school</h3></a>
+        </div>
+
+      
+        <div class="hammBars"><label  for="nav-toggle"><i class="fa fa-bars"></i></label></div> 
+        <input type="checkbox" id="nav-toggle" class="toggle">
+        <nav>
+            <ul>
+                <li><a href="/index.html">Home</a></li>
+            </ul>
+        </nav>
+        
+       </header>
+    <div class="container">
+
+        <div class="form-box-login">
+            <form action="">
+                <h1>Login</h1>
+                <div class="input-box">
+                    <input type="number" placeholder="ID/Certificate" required>
+                    <!--user icon--><box-icon name='user' class="userIcon"></box-icon>
+                </div>
+                <div class="input-box">
+                    <input type="password" placeholder="password" required>
+                    <!--lock icon--><box-icon name='lock-alt' class="userIcon"></box-icon>
+                </div>
+                <div class="forgot-password">
+                    <a href="#">forgot password?</a>
+                </div>
+                <button type="submit" class="btn">Login</button>
+                <p>or</p>
+                <button type="submit" class="btn signUp-btn"><a href="signup.html">Sign In</a></button>
+                <p>or login with a different platform</p>
+                <div class="social-platforms">
+                    <!--social platforms-->
+                    <a href=""><box-icon type='logo' name='chrome'></box-icon></a>
+                    <a href=""><box-icon type='logo' name='facebook-circle'></box-icon></a>
+                    <a href=""><box-icon name='instagram-alt' type='logo' ></box-icon></a>
+                    <a href=""><box-icon type='logo' name='linkedin-square'></box-icon></a>
+                     <!--social platforms-->
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
+
+<!---
+<box-icon name='log-in' class="userIcon"></box-icon>
+<box-icon name='log-out' class="userIcon"></box-icon>
+<box-icon name='user-plus' class="userIcon"></box-icon>
+-->
